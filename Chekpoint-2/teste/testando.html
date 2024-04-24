@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint2</title>
+    <style>
+        div{
+            display:flex;
+            flex-flow: row wrap;
+            padding: 15px 10px;
+            gap:10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="nao_18()" id="nao">NAO</button>
+
+    <div>
+        <button onclick="green()"  id="green">Green</button>
+        <p id="greenP"></p> <button onclick="reGreen()">Remove Item</button>
+    </div>
+
+    <div>
+        <button onclick="red()" id="red">Red</button>
+        <p id="redP"></p> <button onclick="reRed()">Remove Item</button>
+    </div>
+
+    <div>
+        <button onclick="yellow()" id="yellow">Yellow</button>
+        <p id="yellowP"></p> <button onclick="reYellow()">Remove Item</button>
+    </div> 
+
+    <div>
+        <button onclick="blue()" id="blue">blue</button>
+        <p id="blueP"></p> <button onclick="reBlue()">Remove Item</button>
+    </div> 
+
+    <h3>Carrinho</h3>
+    <h4 id="carrinho">Valor carrinho = R$0</h4>
+
+    <button id="calcular" onclick="calc()">Calcular</button>
+    <p id="preco"></p>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(90deg, #2C2C2C 15%, #2B0303 85%);
+    color: white;
+    
+}
+.tudo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    padding: 10px;
+}
+
+.price{
+    gap: 10px;
+    display: flex;
+}
+.ajustes{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+
+}
+button{
+    background-color:grey;
+}
