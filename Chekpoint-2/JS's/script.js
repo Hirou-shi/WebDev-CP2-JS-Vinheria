@@ -10,20 +10,22 @@ function nao_18(){
 }
 
 var add = 0;
-var cont = 0;
+var adi = [];
+var cont = [];
 
 function verMais(){
     window.location.href = "info.html";
 }
 function adicionar(){
-    add+=1.699
-    cont++
+    adi.push(1.699)
+    cont.push(1)
     var um = cont>1?"Mais um":"Um";
     alert(`${um} vinho adicionado ao carrinho!`);
-    console.log(add)
+    console.log(adi)
     console.log(cont)
 }
 function calc(){
+    
     var preco = document.getElementById("preco");
     var res = add*cont;
     preco.innerText = `O valor das suas compras foi de R$${res}`;
@@ -43,4 +45,8 @@ function login(){
     if (emai == 1234 && sena == 1234){
         window.location.href = "index.html";
     }
+}
+
+function voltar(){
+    window.location.href = "index.html";
 }
