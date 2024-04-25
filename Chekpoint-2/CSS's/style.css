@@ -230,6 +230,9 @@ nav ul img{
 .addProduto a{
   font-size:1.3rem;
 }
+.addProduto a:hover{
+  color:red;
+}
 
 .btnCalc{
   background-color:grey;
