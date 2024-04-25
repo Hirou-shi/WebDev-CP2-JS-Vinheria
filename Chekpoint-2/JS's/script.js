@@ -10,34 +10,36 @@ function nao_18(){
 }
 
 var add = 0;
-var adi = [];
-var cont = [];
+var cont = 0;
 
 function verMais(){
     window.location.href = "info.html";
 }
 function adicionar(){
-    adi.push(1.699)
-    cont.push(1)
+    add+=1699
+    cont++
     var um = cont>1?"Mais um":"Um";
     alert(`${um} vinho adicionado ao carrinho!`);
-    console.log(adi)
+    console.log(add)
     console.log(cont)
 }
-function calc(){
-    
-    var preco = document.getElementById("preco");
-    var res = add*cont;
-    preco.innerText = `O valor das suas compras foi de R$${res}`;
-}
 function desconto(){
-    var desc = document.getElementById("des").value;
+    var desc = document.getElementById("cupom").value;
+    var validacao = document.getElementById("validacao");
     
     if (desc == "FIAP2024"){
-        res = res - ((res*10)/100);
+        add = add - ((add*10)/100);
+        validacao.innerText = "O cupom de desconto de 10% foi \n adicionado com sucesso! \n Ao adicionar o cupom clique em calcular o preco novamente para seu cupom ser adicionado!"
     }
+
 }
 
+function calc(){
+    
+    var preco = document.getElementById("total");
+    var vinhos = (cont>1)? "vinhos":"vinho"
+    preco.innerText = `O valor das suas compras foi de R$${add.toFixed(2)} \n Com ${cont} ${vinhos} no carrinho!`;
+}
 function login(){
     var emai = parseInt(document.getElementById("email").value);
     var sena = parseInt(document.getElementById("senha").value);
@@ -49,4 +51,21 @@ function login(){
 
 function voltar(){
     window.location.href = "index.html";
+}
+
+function sujestoes(){
+    window.location.href = "sujestoes.html";
+}
+
+function Enviar(){
+    var nome = document.getElementById("nome").value
+    var telefone = document.getElementById("telefone").value
+    var email = document.getElementById("email").value
+    var mensagem = document.getElementById("mensagem").value
+
+    if(nome != '' && telefone != '' && email != '' && mensagem != ''){
+        alert("Mensagem enviada com sucesso!")
+    }else{
+        alert("Precisa finalizar o cadastro")
+    }
 }

@@ -15,7 +15,7 @@
         
         
         
-        <div>
+        <div class="tudo">
 
             <div class = "info ajustes">
                 <h1>CHÂTEAU PONTET-CANET</h1>
@@ -44,7 +44,20 @@
                 
                 <a onclick="voltar()"><button>&lt; voltar</button></a>
             </div>
-
+            <div id="precos">
+                <div class="calculadora">
+                    <h2>Total compras </h2>
+                    <button onclick="calc()">Calcular</button>
+                    <p id="total"></p>
+                </div>
+                <div class="desconto">
+                    <h2>Cupom de Desconto</h2>
+                    <label for="cupom">Cupom:</label>
+                    <input type="text" id="cupom">
+                    <button onclick="desconto()">Validar</button>
+                    <p id="validacao"></p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="/Chekpoint-2/JS's/script.js"></script>

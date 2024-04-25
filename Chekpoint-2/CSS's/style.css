@@ -225,6 +225,10 @@ nav ul img{
   display:flex;
   align-items:baseline;
   justify-content: center;
+  gap:10px;
+}
+.addProduto a{
+  font-size:1.3rem;
 }
 
 .btnCalc{
@@ -240,4 +244,14 @@ nav ul img{
 
 .um{
   margin-top: 40px;
+}
+
+.product button{
+  background-color: grey;
+}
+
+.formulario{
+  display:flex;
+  flex-flow: column wrap;
+  gap:7px;
 }
