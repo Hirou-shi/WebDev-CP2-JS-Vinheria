@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnello-s</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        max-height: 1080px;
+        background: linear-gradient(45deg, #2C2C2C 15%, #2B0303 85%);
+        color: white;
+        width: 100%;
+        height: 500px;
+    }
+
+.formulario{
+  display:flex;
+  width: 300px;
+  flex-flow: column wrap;
+  gap:10px;
+  text-align: center;
+}
+button{
+    background-color:  gray;
+}
+
+</style>
+<body>
+    <div class="product formulario">
+        <h2>Formulario</h2>
+        <label for="Name">Digite o seu nome</label>
+        <input type="text" id="nome">
+
+        <label for="Tel">Digite o seu telefone</label>
+        <input type="number" id="telefone">
+
+        <label for="email">Digite o seu email</label>
+        <input type="email" id="email">
+
+        <label for="Mensagem">Escreva a sua Mensagem</label>
+        <input type="text" id="mensagem">
+
+        <button onclick="Enviar()">Enviar</button>
+</body>
+</html>
