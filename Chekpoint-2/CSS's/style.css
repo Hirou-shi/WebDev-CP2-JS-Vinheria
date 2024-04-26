@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
-max-height: 800px;
 margin: 0;
 padding: 0;
+border: 0px solid;
 }
 
 body{
-    zoom: 0.9 ;
-    font-family: "Roboto";
-    background-color: #ffffff;
+    font-family: "Roboto"; 
     color: rgb(255, 255, 255);
-    max-height: calc(100vh - 100px);
     overflow-y:hidden;
 }
 .agnello{
@@ -24,10 +21,10 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0);
   background: linear-gradient(90deg, #2C2C2C 15%, #2B0303 85%);
-  padding: 0 auto;
-  margin: 0 auto;
+  background-repeat: no-repeat;
+  padding: 0 ;
+  margin: 0 ;
 }
 .home{
   display: flex;
@@ -42,8 +39,6 @@ body{
 
 nav{
   display: flex;
-  flex-direction: row;
-
 }
 
 nav ul{
@@ -85,6 +80,7 @@ nav ul img{
     justify-content: center;
     align-items: center;
     background-color: #86808036;
+    background-repeat: no-repeat;
   }
   .fav :hover{
     color:#591D1D
@@ -148,7 +144,7 @@ nav ul img{
 }
 .barraLateral{
   border: 1px solid rgba(255, 255, 255, 0);
-  padding: 100px 14px;
+  padding: 50px 14px;
   margin: 0;
   width: 320px;
   height: 550px;
@@ -182,17 +178,10 @@ nav ul img{
 .produtos {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: baseline;
-  background-image: url(https://gabrielmarinho.com/wp-content/uploads/2013/02/300400_2090471785132_106445699_n.jpg?w=720);
-  background-repeat: no-repeat;
-  background-size: 1500px;
 }
 
-.produto.container {
-  padding-top: 10px;
-  height: 200px;
-
-}
 
 .produto-lista {
   display: flex;
@@ -202,6 +191,8 @@ nav ul img{
   padding: 10px;
   max-height: calc(100vh - 200px);
   overflow-y: auto;
+  width: 100%;
+  
 }
 
 .product {
@@ -229,21 +220,9 @@ nav ul img{
   height: 200px;
 }
 
-.product p {
-  margin-top: 5px;
-}
 
-.addProduto{
-  display:flex;
-  align-items:baseline;
-  justify-content: center;
-  gap:10px;
-}
-.addProduto a{
-  font-size:1.3rem;
-}
 .addProduto a:hover{
-  color:red;
+  color:rgba(255, 0, 0, 0.5);
 }
 
 .btnCalc{
@@ -269,4 +248,26 @@ nav ul img{
   display:flex;
   flex-flow: column wrap;
   gap:7px;
+}
+.form{
+  border: 2px solid rgba(255, 255, 255, 0);
+  list-style: none;
+  border-radius: 20px;
+  padding: 1px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #868080
+}
+
+.form :hover{
+  color: #2b03035b;
+}
+.sugest :hover{
+  color: #2b030365;
+}
+
+.background{
+  background-image: url(https://gabrielmarinho.com/wp-content/uploads/2013/02/300400_2090471785132_106445699_n.jpg?w=720);
 }

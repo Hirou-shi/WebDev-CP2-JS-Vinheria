@@ -6,17 +6,21 @@
     <title>Agnello's</title>
     <link rel="stylesheet" href="/Chekpoint-2/CSS's/style.css">
 </head>
+<style>
+    body{
+    height: 600px;    
+    width: 100%;
+    }
+</style>
 <body>
     <header>
-        <div class="container">
-            <nav class="header">
+        <div class="header">
                 <div class="agnello">
                     <h2>Agnello's</h2>
                     <img src="/Chekpoint-2/Images/esquerda/logo.png" alt="Logo da Agnello">
             </div>
                 <h1 class="home">HOME</h1><br>
-            </nav>
-
+        </header>
             <nav>
                 <div class="barraLateral">
                 <ul class="lateral">
@@ -46,21 +50,25 @@
                     </div><br>
 
                     <div class="sugest">
-                        <a onclick="sujestoes()" href="#">
+                        <a onclick="sugestoes()" href="#">
                         <h2>SUGESTÕES</h2> 
                         </a>
                     </div>
-<br>
 
+                    <div class="form">
+                        <a onclick="form()" href="#">
+                            <h2>Formulário</h2> 
+                        </a>
+                    </div>
+<br><br><br>
                     <div class="logout">
                         <img src="/Chekpoint-2/Images/esquerda/outlogin.png">
                         <h5><a href="#" >Log out</a></h5>
                     </div>
                 </ul>
                 </div>
-                <nav>
+                <nav class="background">
                     <ul class="produtos">
-
                     <div class="produto.container">
                         <div class="contain.pesquisa">
                         <div class="barrapesquisa">
@@ -84,7 +92,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
     
@@ -94,7 +102,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a  onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
     
@@ -104,7 +112,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
         
@@ -114,7 +122,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
         
@@ -124,7 +132,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
                             
@@ -134,7 +142,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
         
@@ -144,7 +152,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
         
@@ -154,7 +162,7 @@
                                 </a>
                                 <div class="addProduto">
                                     <p>Pré Descrição...</p>
-                                    <a  onclick="verMais()">Ver mais...</a>
+                                    <a  onclick="semproduto()">Ver mais...</a>
                                 </div>
                             </div>
                             </div>
@@ -165,10 +173,6 @@
             </nav>
             </div>
         </div>
-    </header>
-    <footer>
-        
-    </footer>
     <script src="/Chekpoint-2/JS's/script.js"></script>
 </body>
 </html>

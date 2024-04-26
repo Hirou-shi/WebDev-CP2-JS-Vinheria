@@ -7,15 +7,37 @@
     <title>Maior ou Menor de idade
     </title>
     <style>
+        h1{
+            color: white;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
         .container {
             display: flex;
             width: 100%;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            background: linear-gradient(360deg, #2C2C2C 10% ,#2B0303, #2B0303 90%);
+            background-repeat: no-repeat;
+            height: 600px;
         }
 
         button {
             background-color: grey;
+        }
+
+        a{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .simnao{
+            display: flex;
+            gap: 20px;
+            flex-direction: row-reverse;
         }
     </style>
 </head>
@@ -23,7 +45,7 @@
 <body>
     <div class="container">
         <h1>É maior de 18 anos?</h1>
-        <div>
+        <div class="simnao">
             <a onclick="nao_18()"><button>NAO</button></a>
             <a onclick="sim_18()"><button>SIM</button></a>
         </div>

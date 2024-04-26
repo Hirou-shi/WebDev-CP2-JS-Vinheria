@@ -53,8 +53,8 @@ function voltar(){
     window.location.href = "index.html";
 }
 
-function sujestoes(){
-    window.location.href = "sujestoes.html";
+function sugestoes(){
+    window.location.href = "sugestoes.html";
 }
 
 function Enviar(){
@@ -68,4 +68,12 @@ function Enviar(){
     }else{
         alert("Precisa finalizar o cadastro")
     }
+}
+
+function form(){
+    window.location.href = "form.html";
+}
+
+function semproduto(){
+    window.location.href = "semproduto.html";
 }
