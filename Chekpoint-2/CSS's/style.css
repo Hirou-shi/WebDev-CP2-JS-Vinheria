@@ -205,6 +205,14 @@ nav ul img{
 }
 
 .product {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+
+  text-align: center;
+}
+
+.sugest{
   border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
   list-style: none;
@@ -214,11 +222,6 @@ nav ul img{
   justify-content: center;
   align-items: center;
   background-color: #86808036;
-  width: 300px;
-  margin: 20px;
-  padding: 15px;
-
-  text-align: center;
 }
 
 .product a img {
