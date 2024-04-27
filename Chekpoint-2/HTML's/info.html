@@ -25,12 +25,59 @@
         border: 0.4px solid rgba(58, 8, 8, 0.452);
         width: 8rem;
     }
-    .alinhar{
+
+    .alinhar {
         display: flex;
         gap: 30px;
         text-align: center;
         padding: 10px;
     }
+
+    .comentarios{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+
+    }
+    .comentarios h2{
+        font-size: 50px;
+        }
+    .comentarios p{
+        
+        font-size: large;
+        border: 5px solid white;
+        font-style: none;
+        width: 900px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .comentarios input{
+        width: 400px;
+        padding: 40px;
+        height: 5px;
+    }
+    .comentarios textarea{
+        width: 480px;
+        height: 100px;
+        padding: 0px;
+    }
+    .comentarios button{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        gap: 10px;
+    }
+    .comentarios label{
+        border: 1px solid black;
+        width: fit-content;
+        padding: 10px;
+        background-color: rgb(37, 25, 25);
+    }
+
 </style>
 
 <body>
@@ -74,8 +121,8 @@
             <div class="info-price">
                 <h2>R$ 1.699,00</h2>
                 <div class="alinhar">
-                <button onclick="adicionar()">Adicionar ao carrinho</button>
-                <a onclick="voltar()"><button>Voltar</button></a>
+                    <button onclick="adicionar()">Adicionar ao carrinho</button>
+                    <a onclick="voltar()"><button>Voltar</button></a>
                 </div>
             </div>
 
@@ -94,6 +141,16 @@
                 <p id="validacao"></p>
             </div>
         </div>
+    </div>
+    <div class="comentarios">
+        <h2>Comentários:</h2>
+            <label for="voce">VOCÊ</label>
+            <input type="text" value=""><br>
+            <button onclick="comentar()" type="button">Comentar</button><br><br>
+            <label for="coment">Anônimo 21</label>
+            <textarea name="" id="" cols="30" rows="10">Ótimos vinhos!</textarea><br><br>
+            <label for="coment">Anônimo 21</label>
+            <textarea name="" id="" cols="30" rows="10">Amei a experiência!</textarea>
     </div>
     <script src="/Chekpoint-2/JS's/script.js"></script>
 </body>
