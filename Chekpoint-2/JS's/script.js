@@ -19,7 +19,8 @@ function adicionar(){
     add+=1699
     cont++
     var um = cont>1?"Mais um":"Um";
-    alert(`${um} vinho adicionado ao carrinho!`);
+    var total = cont
+    alert(`Adicionado ao carrinho com sucesso!\n Total adicionado:${total}`);
     console.log(add)
     console.log(cont)
 }
@@ -76,4 +77,10 @@ function form(){
 
 function semproduto(){
     window.location.href = "semproduto.html";
+}
+function carrinho(){
+    window.location.href = "carrinho.html";
+}
+function logout(){
+    window.location.href = "Pagina Inicial.html";
 }

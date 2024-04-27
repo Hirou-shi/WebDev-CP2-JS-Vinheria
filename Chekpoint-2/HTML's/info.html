@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/Chekpoint-2/CSS's/vermais.css">
     <link rel="html" href="index.html">
 </head>
+<style>
+    .total{
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        gap: 30px;
+    }
+</style>
 <body>
     <div class="container">
         <div>
@@ -42,21 +50,14 @@
                 
                 <button onclick="adicionar()">Adicionar ao carrinho</button>
                 
-                <a onclick="voltar()"><button>&lt; voltar</button></a>
+                <a onclick="voltar()"><button>Voltar</button></a>
             </div>
             <div id="precos">
-                <div class="calculadora">
-                    <h2>Total compras </h2>
+                <div class="total">
+                    <h2> Total:</h2> </h2>
                     <button onclick="calc()">Calcular</button>
                     <p id="total"></p>
-                </div>
-                <div class="desconto">
-                    <h2>Cupom de Desconto</h2>
-                    <label for="cupom">Cupom:</label>
-                    <input type="text" id="cupom">
-                    <button onclick="desconto()">Validar</button>
-                    <p id="validacao"></p>
-                </div>
+
             </div>
         </div>
     </div>
