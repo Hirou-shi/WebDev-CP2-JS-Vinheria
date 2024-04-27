@@ -93,3 +93,14 @@ function carrinho(){
 function logout(){
     window.location.href = "Pagina Inicial.html";
 }
+
+function comentar(){
+    alert(`Comentário enviado com sucesso!`);
+}
+function favoritar(){
+    alert(`Favoritado!`);
+}
+function desejos(){
+alert(`Adicionado a lista de desejos!`);
+
+}
