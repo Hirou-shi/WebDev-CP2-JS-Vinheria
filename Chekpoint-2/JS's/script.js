@@ -32,7 +32,10 @@ function desconto(){
         add = add - ((add*10)/100);
         validacao.innerText = "O cupom de desconto de 10% foi \n adicionado com sucesso! \n Ao adicionar o cupom clique em calcular o preco novamente para seu cupom ser adicionado!"
     }
-
+    else {
+        console.log('CUPOM INVÁLIDO')
+        validacao.innerText = "CUPOM INVÁLIDO!"
+    }
 }
 
 function calc(){
@@ -41,6 +44,7 @@ function calc(){
     var vinhos = (cont>1)? "vinhos":"vinho"
     preco.innerText = `O valor das suas compras foi de R$${add.toFixed(2)} \n Com ${cont} ${vinhos} no carrinho!`;
 }
+
 function login(){
     var emai = parseInt(document.getElementById("email").value);
     var sena = parseInt(document.getElementById("senha").value);
@@ -66,7 +70,8 @@ function Enviar(){
 
     if(nome != '' && telefone != '' && email != '' && mensagem != ''){
         alert("Mensagem enviada com sucesso!")
-    }else{
+    }
+    else{
         alert("Precisa finalizar o cadastro")
     }
 }
