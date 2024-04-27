@@ -34,6 +34,7 @@ function desconto(){
     
         add = add - ((add*10)/100);
         validacao.innerText = `O cupom de desconto de 10% foi \n adicionado com sucesso! \n Ao adicionar o cupom clique em calcular o preco novamente para seu cupom ser adicionado!\n\n\nTotal da compra:R$${add.toFixed(2)}`
+        
     }
     else {
         console.log('CUPOM INVÁLIDO')
