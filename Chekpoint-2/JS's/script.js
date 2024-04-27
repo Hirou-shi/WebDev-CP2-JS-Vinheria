@@ -29,8 +29,12 @@ function desconto(){
     var validacao = document.getElementById("validacao");
     var preco = document.getElementById("total");
     var vinhos = (cont>1)? "vinhos":"vinho";
+    var cliquesMaximos = 5;
+    var contadorCliques = 0;
     
     if (desc == "FIAP2024"){
+        
+        desconto() = (cont = 1)
         add = add - ((add*10)/100);
         validacao.innerText = `O cupom de desconto de 10% foi \n adicionado com sucesso! \n Ao adicionar o cupom clique em calcular o preco novamente para seu cupom ser adicionado!\n\n\nTotal da compra:R$${add.toFixed(2)}`
     }
