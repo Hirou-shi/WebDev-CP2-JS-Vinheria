@@ -70,6 +70,7 @@ function Enviar(){
 
     if(nome != '' && telefone != '' && email != '' && mensagem != ''){
         alert("Mensagem enviada com sucesso!")
+        window.location.href = "index.html";
     }
     else{
         alert("Precisa finalizar o cadastro")
