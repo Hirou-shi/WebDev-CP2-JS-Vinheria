@@ -24,6 +24,7 @@ function adicionar(){
     console.log(add)
     console.log(cont)
 }
+var contadorCliques = 0;
 function desconto(){
     var desc = document.getElementById("cupom").value;
     var validacao = document.getElementById("validacao");
@@ -31,10 +32,10 @@ function desconto(){
     var vinhos = (cont>1)? "vinhos":"vinho";
 
     if (desc == "FIAP2024"){
-        if (contadorCliques < 1)
+        if (contadorCliques < 1){
         add = add - ((add*10)/100);
         validacao.innerText = `O cupom de desconto de 10% foi \n adicionado com sucesso! \n Ao adicionar o cupom clique em calcular o preco novamente para seu cupom ser adicionado!\n\n\nTotal da compra:R$${add.toFixed(2)}`
-        contadorCliques++
+        contadorCliques++}
     }
     else {
         console.log('CUPOM INVÁLIDO')
