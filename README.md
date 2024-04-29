@@ -6,3 +6,5 @@ Erick Fujita - RM556096
 Mauricio Alves - RM556214
 Rodrigo Hiroshi - RM557374
 Vinicius Santos - RM558218
+
+Abrir primeiro o HTML Pagina Inicial.html.
